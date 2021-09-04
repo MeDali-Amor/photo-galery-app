@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+
+:root {
+    --primary: #efb6b2;
+    --secondary: #4e4e4e;
+    --error: #ff4a4a;
+}
+
+/* base styles & title */
+body {
+    font-family: "Noto Serif";
+    color: var(--secondary);
+}
+.App {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.title h1 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.title h2,
+.title p {
+    text-align: center;
+}
+.title h2 {
+    margin-top: 60px;
+    font-size: 2.6rem;
+}
+
+/* upload form styles */
+form {
+    text-align: center;
+    margin: 30px;
+}
+label input {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+label {
+    /* width: 50px;
+    height: 25px; */
+    margin: 15px;
+    border: 1px solid #4e4e4e;
+    padding: 7px 15px;
+    border-radius: 5px;
+    background: #fff3f3;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+label:hover {
+    background: #efb6b2;
+    color: #fff;
+}
+.progress-bar {
+    height: 5px;
+    background: var(--primary);
+    margin-top: 20px;
+}
+
+/* progress bar styles */
+
+/* image grid styles */
+.img-grid {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.img-wrapper {
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    position: relative;
+    opacity: 0.8;
+}
+.img-wrapper img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* modal styles */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.modal-img {
+    display: block;
+    /* width: 50px; */
+    max-width: 60%;
+    max-height: 80%;
+    margin: 60px auto;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+    border: solid 3px #fff;
+}
